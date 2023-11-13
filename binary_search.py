@@ -14,6 +14,3 @@ def binary_search(lst, target, left=0, right=None):
         return binary_search(lst, target, left=mid + 1, right=right)
     elif mid_elem > target:
         return binary_search(lst, target, left=left, right=mid - 1)
-
-tmp = [999999999999999, 1355590521, 1416357796, 1626848158]
-print(binary_search(tmp, 999999999999999))
